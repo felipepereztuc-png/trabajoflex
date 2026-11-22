@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa y Zapatillas | Flexbox</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SECCIÓN 1: HEADER / NAVEGACIÓN
+       Usamos Flexbox para alinear el logo a la izquierda y los enlaces a la derecha
+       en forma horizontal, y centrarlos verticalmente dentro de la barra. -->
+  <header class="navbar">
+    <div class="logo">OLIVA<span>STORE</span></div>
+    <nav class="nav-links">
+      <a href="#zapatillas">Zapatillas</a>
+      <a href="#ropa">Ropa</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN 2: HERO / PORTADA
+       Usamos Flexbox en columna y centrado en ambos ejes (horizontal y vertical)
+       para destacar el título y el botón principal. -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Urbanwear &amp; Sneakers</h1>
+      <p>Indumentaria y zapatillas seleccionadas para el día a día.</p>
+      <a href="#galeria" class="btn-principal">Ver catálogo</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: GALERÍA DE PRODUCTOS (ROPA Y ZAPATILLAS)
+       Usamos Flexbox con flex-wrap: wrap para que las tarjetas se acomoden en filas
+       y bajen automáticamente cuando no entren en el ancho disponible. -->
+  <main id="galeria" class="catalogo-section">
+    <h2 class="titulo-seccion">Destacados</h2>
+
+    <div class="galeria-flex">
+      <!-- Producto 1: Zapatillas -->
+      <article class="card" id="zapatillas">
+        <div class="card-img">ZAPATILLAS RUNNER</div>
+        <div class="card-body">
+          <h3>Zapatillas Retro Runner</h3>
+          <p class="categoria">Calzado urbano</p>
+          <p class="precio">$89.900</p>
+          <button class="btn-card">Agregar</button>
+        </div>
+      </article>
+
+      <!-- Producto 2: Ropa -->
+      <article class="card" id="ropa">
+        <div class="card-img">CAMPERA CARGO</div>
+        <div class="card-body">
+          <h3>Campera Oversize Oliva</h3>
+          <p class="categoria">Indumentaria</p>
+          <p class="precio">$64.500</p>
+          <button class="btn-card">Agregar</button>
+        </div>
+      </article>
+
+      <!-- Producto 3: Ropa -->
+      <article class="card">
+        <div class="card-img">REMERA HEAVY</div>
+        <div class="card-body">
+          <h3>Remera Algodón 240g</h3>
+          <p class="categoria">Indumentaria</p>
+          <p class="precio">$24.000</p>
+          <button class="btn-card">Agregar</button>
+        </div>
+      </article>
+
+      <!-- Producto 4: Zapatillas -->
+      <article class="card">
+        <div class="card-img">SNEAKERS LOW</div>
+        <div class="card-body">
+          <h3>Zapatillas Court Low</h3>
+          <p class="categoria">Calzado urbano</p>
+          <p class="precio">$78.000</p>
+          <button class="btn-card">Agregar</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- SECCIÓN 4: FOOTER
+       Usamos Flexbox para distribuir los elementos del pie de página y mantenerlos
+       alineados verticalmente. -->
+  <footer id="contacto" class="footer">
+    <p>Oliva Store — Ropa &amp; Zapatillas</p>
+    <p>Envíos a todo el país</p>
+  </footer>
+</body>
+</html>
